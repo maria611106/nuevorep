@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Morado</title>
+    <style>
+        body {
+            background-color: rgba(17, 0, 16, 0);
+            margin: 0;
+            font-family: 'Comic Sans MS', Arial, sans-serif;
+            color: rgb(255, 255, 255);
+        }
+
+        nav {
+            background-color: rgb(128, 0, 90); /* Fondo morado */
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(5px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            animation: slideDown 1s ease;
+        }
+
+        @keyframes slideDown {
+            from {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav ul li {
+            margin: 10px 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: rgb(247, 0, 255); /* Color de letra amarillo */
+            font-family: 'Georgia', serif; /* Tipo de letra Georgia */
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        nav ul li a:hover {
+            background: rgba(255, 255, 255, 0.1);
+            transform: scale(1.1);
+        }
+
+        .welcome {
+            text-align: center;
+            margin: 80px 20px 30px;
+            font-size: 20px;
+        }
+
+        audio {
+            display: block;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="paginas/pagina1/index1.html" target="centrale">pagina 1</a></li>
+            <li><a href="paginas/pagina2/Web-Servicio-Tutorial-master/index.html" target="centrale">pagina 2</a></li>
+            <li><a href="paginas/pagina3/index2.html" target="centrale">pagina 3</a></li>
+            <li><a href="paginas/pagina4/index3.html" target="centrale">pagina 4</a></li>
+            <li><a href="paginas/Local/index.html" target="centrale">Local host</a></li>
+        </ul>
+    </nav>
+
+    
+</body>
+</html>
